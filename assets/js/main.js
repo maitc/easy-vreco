@@ -23,12 +23,11 @@ function initMap(){
     latitud = posicion.coords.latitude;
     longitud = posicion.coords.longitude;
 
-    var imga = "https://www.broomfield.org/images/CivicAlerts/1/ThumbNails/blue%20heading%20icons_bike_50x50_AspectPreserved_thumb.png";
     var miUbicacion = new google.maps.Marker({
       position: {lat:latitud, lng:longitud},
       animation: google.maps.Animation.DROP,
       map: map,
-      icon: imga
+      icon: "https://www.broomfield.org/images/CivicAlerts/1/ThumbNails/blue%20heading%20icons_bike_50x50_AspectPreserved_thumb.png"
     });
 
     map.setZoom(17);
